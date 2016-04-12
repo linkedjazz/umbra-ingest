@@ -3,8 +3,19 @@ var compare = require("./lib/compare")
 var dbLoad = require("./lib/db_load")
 
 
+if (process.argv[2] && process.argv[2].toLowerCase() === 'ingest') {
+	ingestElastic.ingest()
+}
 
-//ingestElastic.ingest()
-compare.compare()
+if (process.argv[2] && process.argv[2].toLowerCase() === 'compare') {
+	compare.compare()
+}
 
-//dbLoad()
+if (process.argv[2] && process.argv[2].toLowerCase() === 'load') {
+	dbLoad()
+}
+
+
+
+
+
