@@ -1,0 +1,29 @@
+{
+  "name": "umbra-ingest",
+  "version": "1.0.0",
+  "description": "Ingest the umbra data dumps to elasticsearch",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thisismattmiller/umbra-ingest.git"
+  },
+  "keywords": [
+    "linked",
+    "jazz"
+  ],
+  "author": "matt miller <thisismattmiller@gmail.com> (http://twitter.com/thisismmiller)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thisismattmiller/umbra-ingest/issues"
+  },
+  "homepage": "https://github.com/thisismattmiller/umbra-ingest",
+  "dependencies": {
+    "JSONStream": "^1.1.1",
+    "elasticsearch": "^10.1.3",
+    "highland": "^2.7.1",
+    "mongodb": "^2.1.7"
+  }
+}
